@@ -4,7 +4,7 @@ export const useAccount = jest.fn(() => ({
   }));
 
   export const useConnect = jest.fn(() => ({
-    connectors: [],
+    connectors: [{name: 'connect1', uid: 1}, {name: 'connect2', uid:2}],
     connect: jest.fn(),
   }));
 
