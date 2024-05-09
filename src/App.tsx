@@ -9,7 +9,7 @@ function App() {
   const account = useAccount()
   return (
     <Box sx={{width: '400px'}}>
-      <Connect isConnected={account.isConnected} connectorName={account.connector?.name}  />
+      <Connect />
       <ChainInfo />
       {account.isConnected && <SendSteps />}
       {account.isReconnecting && <Typography>Reconnecting</Typography>}

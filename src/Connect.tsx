@@ -1,20 +1,17 @@
 import { Box, Button, Card, Typography } from '@mui/material';
 import React from 'react';
 import { useAccount, useConnect, useDisconnect } from 'wagmi';
-interface ConnectProps {
-    isConnected: boolean;
-    connectorName?: string;
-}
-export const Connect: React.FC<ConnectProps> = ({isConnected, connectorName}) => {
+
+export const Connect: React.FC = () => {
     const { connectors, connect} = useConnect()
     const account = useAccount()
     const { disconnect } = useDisconnect()
    
-    if(isConnected){
+    if(account.isConnected){
         return (
             <Card variant='outlined' sx={{p:1,mt:1, mb:1, display: 'flex', width: '100%', alignItems: 'center'}}>
 
-                <Typography variant='caption'>Connected with <b>{connectorName || 'no name'}</b></Typography>
+                <Typography variant='caption'>Connected with <b>{account.connector?.name || 'no name'}</b></Typography>
                 <Button variant='outlined' sx={{ml: 'auto', textTransform: 'lowercase'}} color='error' size='small' onClick={() => disconnect()}>Disconnect</Button>
             </Card>
         )
