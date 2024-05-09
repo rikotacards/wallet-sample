@@ -17,3 +17,6 @@
 Uses Jest and React Testing Library
 * run `npm test`
 * We mock the wagmi library custom hooks in `__mocks__`
+* We test the rendering of the hooks, to asset that it is indeed displaying what we expect. 
+* `App.test.tsx` takes its mocked hooks from the `__mocks__` folder
+* `ChainInfo.test.tsx` has a local mock that overrides value in the `__mocks__` folder.
