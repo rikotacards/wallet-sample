@@ -95,6 +95,7 @@ export const SendForm: React.FC<SendFormProps> = ({
                         {erc20TokenList.map((asset) => <MenuItem value={asset?.symbol}>{asset?.symbol}</MenuItem>)}
                     </Select>
                     <TextField
+                    type='number'
                         InputProps={
                             { endAdornment: <InputAdornment position='end'><Button size='small'>max</Button></InputAdornment> }
                         }

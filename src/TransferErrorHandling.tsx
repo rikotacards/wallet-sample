@@ -23,7 +23,7 @@ export const TransferErrorHandling: React.FC<TransferErrorHandlingProps> = React
 
     React.useEffect(() => {
         return enable()
-    })
+    }, [])
 
     const simulatedErc20Transfer = useSimulateContract({
         abi: erc20Abi,
