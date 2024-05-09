@@ -25,7 +25,10 @@
     "wagmi": "latest"
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.24.5",
+    "@babel/preset-typescript": "^7.24.1",
     "@biomejs/biome": "^1.1.2",
+    "@jest/globals": "^29.7.0",
     "@types/jest": "^29.5.12",
     "@types/node": "^20.12.11",
     "@types/react": "^18.2.23",
@@ -34,7 +37,7 @@
     "@wagmi/cli": "latest",
     "buffer": "^6.0.3",
     "ts-jest": "^29.1.2",
-    "typescript": "^5.2.2",
+    "typescript": "^5.4.5",
     "vite": "^4.4.9"
   }
 }
