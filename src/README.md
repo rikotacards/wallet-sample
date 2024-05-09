@@ -12,9 +12,8 @@
 * Mocking out the various wagmi hooks so we can use react testing library more reliably. Many components depends on hooks, and hence it requires mocking. 
 
 
-
-
 # Component Tests
 
 Uses Jest and React Testing Library
 * run `npm test`
+* We mock the wagmi library custom hooks in `__mocks__`
