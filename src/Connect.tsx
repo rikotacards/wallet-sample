@@ -20,7 +20,6 @@ export const Connect: React.FC = () => {
             <Card variant='outlined' sx={{ p: 1 }}>
                 <Box sx={{display: 'flex', width: '100%', alignItems: 'center', flexDirection: 'row'}}>
                     <Typography variant='caption'>Connect to a wallet to send assets</Typography>
-                    <Button sx={{ml:'auto', textTransform: 'lowercase' }} size='small'>Show options</Button>
                 </Box>
                 <Box>
                         {connectors.map((connector) => (
